@@ -6,7 +6,7 @@ import com.example.somkiat.sample.data.Note;
 
 import java.util.List;
 
-public interface NoteContract {
+public interface MainContract {
     interface View {
 
         void setProgressIndicator(boolean active);

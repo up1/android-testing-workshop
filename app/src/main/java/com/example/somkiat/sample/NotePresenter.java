@@ -4,19 +4,18 @@ import android.support.annotation.NonNull;
 
 import com.example.somkiat.sample.data.Note;
 import com.example.somkiat.sample.data.NoteRepository;
-import com.google.common.base.Preconditions;
 
 import java.util.List;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
-public class NotePresenter implements NoteContract.UserActionsListener {
+public class NotePresenter implements MainContract.UserActionsListener {
 
     private final NoteRepository mNotesRepository;
-    private final NoteContract.View mNotesView;
+    private final MainContract.View mNotesView;
 
     public NotePresenter(
-            @NonNull NoteRepository notesRepository, @NonNull NoteContract.View notesView) {
+            @NonNull NoteRepository notesRepository, @NonNull MainContract.View notesView) {
         mNotesRepository = checkNotNull(notesRepository, "notesRepository cannot be null");
         mNotesView = checkNotNull(notesView, "notesView cannot be null!");
     }

@@ -26,10 +26,10 @@ import java.util.List;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
-public class MainFragment extends Fragment implements NoteContract.View {
+public class MainFragment extends Fragment implements MainContract.View {
     private static final int REQUEST_ADD_NOTE = 1;
 
-    private NoteContract.UserActionsListener mActionsListener;
+    private MainContract.UserActionsListener mActionsListener;
 
     private NotesAdapter mListAdapter;
 
