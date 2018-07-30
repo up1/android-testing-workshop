@@ -50,7 +50,7 @@ public class MainFragment extends Fragment implements MainContract.View {
     @Override
     public void onResume() {
         super.onResume();
-        mActionsListener.loadNotes(false);
+        mActionsListener.loadNotes(true);
     }
 
     @Override
